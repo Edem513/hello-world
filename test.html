@@ -1,0 +1,90 @@
+<!--   this is to test car moving in the rain   -->
+
+<body>     
+
+<script>
+var x =0;
+
+    
+
+    
+draw= function() {
+   var y = 2; 
+
+var linewith = 10;
+noStroke();
+var cloudwith = 48;
+background (0, 221, 255);   
+fill(255, 0, 0);
+rect(125,199,149,255);
+fill(0, 0, 0);
+rect(167,253,50,255);
+fill(255, 234, 0);
+ellipse(207,285,13,13);
+fill(255, 94, 0);
+rect(x,245,107,49);
+rect(x+24,219,53,40);
+var movecl=174;
+var   cloudhight = 41;
+fill(0, 0, 0);
+ellipse(x+97,304,40,37);
+ellipse(x+11,302,40,37); 
+x = x + 1;
+fill(255, 217, 0);
+ellipse(377,48,196,172);
+fill(255, 255, 255);
+
+var y = 6;
+fill(0, 0, 0);
+rect(-9,311,561,y+81);
+fill(255, 230, 0);
+rect(12,346,linewith+63,y);
+rect(319,346,linewith+54,y);
+rect(142,348,linewith+91,y);
+if (x > 400) { x = -5;}
+fill(9, 0, 255);
+var w = 10;
+ellipse(121,x+103,14,16);
+ellipse(175,x+103,14,16);
+ellipse(240,x+103,14,16);
+w = w + 155;
+if (x > 14) { w = -5;}
+   fill(255, 255, 255);
+   ellipse(movecl,98,cloudwith+8,cloudhight+-1);
+   ellipse(movecl+28,84,cloudwith,cloudhight);
+   ellipse(movecl+78,93,cloudwith,cloudhight);
+   ellipse(movecl+84,97,cloudwith,cloudhight);
+   ellipse(movecl+46,69,cloudwith,cloudhight);
+fill(30, 0, 255);
+ellipse(39,x+85,13,13);
+ellipse(13,x+51,13,13);
+  ellipse(116,x+-219,13,13);
+ ellipse(190,x+-89,13,13);
+  ellipse(31,x+-122,13,13); 
+  ellipse(197,x+32,13,13);
+ fill(255, 255, 255);
+   ellipse(81,50,cloudwith,cloudhight);
+   ellipse(30,50,cloudwith,cloudhight);
+   ellipse(57,50,cloudwith,cloudhight);
+         ellipse(61,27,cloudwith,cloudhight);              
+    ellipse(103,49,cloudwith,cloudhight);
+   fill(255, 255, 255 ); 
+  ellipse(movecl+30,97,cloudwith,cloudhight);
+  ellipse(movecl+57,93,cloudwith,cloudhight);
+     ellipse(movecl+83,97,cloudwith,cloudhight);
+ellipse(movecl+55,74,cloudwith,cloudhight);
+if(x<495){playSound(getSound("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")); }
+
+
+
+};
+
+
+
+
+
+
+
+</script>
+
+</body>
